@@ -1,0 +1,126 @@
+🧩 1. ¿Qué es Responsive Design?
+
+👉 Que una página se vea bien en celular, tablet y computador.
+
+Herramientas clave:
+
+%
+
+vw / vh
+
+max-width
+
+flexbox
+
+media queries
+
+Ejemplo básico:
+
+img {
+    width: 100%;
+    max-width: 300px;
+}
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+📦 2. FLEXBOX (lo más importante)
+
+Flexbox sirve para ordenar elementos en una fila o columna.
+
+.contenedor {
+    display: flex;
+}
+
+Propiedades esenciales:
+Propiedad	Para qué sirve
+display: flex	Activa flexbox
+flex-direction	fila o columna
+justify-content	alineación horizontal
+align-items	alineación vertical
+flex-wrap	permite saltar de línea
+Ejemplo visual:
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+📏 3. GAP (espacio limpio)
+
+👉 gap es el espacio entre elementos, mejor que margin.
+
+.contenedor {
+    display: flex;
+    gap: 40px;
+}
+
+
+También puedes hacer:
+
+gap: 20px 60px; /* filas | columnas */
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+📱 4. MEDIA QUERIES (responsive real)
+
+Sirven para cambiar estilos según el tamaño de pantalla.
+
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+    }
+}
+
+
+📌 Regla:
+
+PC → normal
+
+Tablet → ajustar
+
+Celular → columna
+------------------------------------------------------------
+------------------------------------------------------------
+------------------------------------------------------------
+🎯 5. EJEMPLO COMPLETO PARA PRACTICAR
+HTML
+<div class="imagenes">
+    <img src="img1.jpg">
+    <img src="img2.jpg">
+    <img src="img3.jpg">
+</div>
+
+CSS
+.imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.imagenes img {
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Celular */
+@media (max-width: 600px) {
+    .imagenes img {
+        width: 90vw;
+        height: 180px;
+    }
+}
+v
+🧠 6. Conceptos que DEBES memorizar
+
+✔ display: flex
+✔ gap separa elementos
+✔ object-fit: cover evita deformar imágenes
+✔ flex-wrap: wrap hace responsive
+✔ @media adapta a celular
