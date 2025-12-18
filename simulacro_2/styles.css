@@ -1,0 +1,105 @@
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin:0;
+    padding: 0;
+    border: 10px solid #25e2d8;
+}
+
+
+#navegacion{
+    background: #1cd4d480;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+#navegacion a{
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    width: 100%;
+}
+
+nav a{
+    color: #000000;
+    padding: 10px 14px;
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover {
+    color: #ffffff; /* Se vuelve blanco */
+}
+
+
+hr{
+    border: 1px solid #25cce2;
+}
+
+button{
+    background: #1536c5;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    transition: .3s;
+    border-radius: 10px;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+/* ------------------*/
+/* CARACTERISTICAS*/
+/* ------------------*/
+
+section {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 2px solid #555;
+  max-width: 900px;
+  margin: auto;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+img{max-width: 400px;}
+
+img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s;
+}
+
+img:hover{
+    transform: scale(1.07);
+}
+
+.card{
+    display: grid;
+    gap:24px
+}
