@@ -1,0 +1,56 @@
+/* Estilos generales del body */
+body {
+  font-family: Arial, sans-serif;  /* Define la fuente del texto como Arial o sans-serif si no está disponible */
+  margin: 0;                        /* Elimina el margen por defecto del navegador */
+}
+
+/* Estilos del menú de navegación */
+nav ul {
+  list-style: none;                  /* Elimina los puntos de las listas */
+  display: flex;                     /* Convierte la lista en un contenedor flex para organizar los elementos en fila */
+  padding: 10px 20px;                /* Espaciado interno: 10px arriba/abajo, 20px izquierda/derecha */
+  background: #eee;                  /* Color de fondo gris claro para el menú */
+  margin: 0;                         /* Elimina el margen externo por defecto de la lista */
+}
+
+/* Estilos de cada elemento de la lista del menú */
+nav ul li {
+  margin-right: 27px;                /* Espacio a la derecha de cada elemento, separándolos entre sí */
+}
+
+/* Estilos de los enlaces dentro de la lista del menú */
+nav ul li a {
+  text-decoration: none;             /* Quita el subrayado de los enlaces */
+  color: black;                      /* Color del texto negro */
+  font-weight: normal;               /* Peso normal del texto (no negrita) */
+}
+
+/* Estilo del contenedor de imagen grande */
+#imagen {
+  background: url(imagenes/licores.jpg) center / cover no-repeat; /* Imagen de fondo centrada, cubierta y sin repetición */
+  min-height: 30vh;                  /* Altura mínima 30% de la altura de la ventana (responsivo) */
+  display: flex;                     /* Flexbox para poder centrar contenido dentro del div */
+  align-items: center;               /* Centra verticalmente el contenido dentro del div */
+  justify-content: center;           /* Centra horizontalmente el contenido dentro del div */
+}
+
+/* Estilo del menú amarillo */
+#menu1 ul {
+  background-color: rgb(248, 227, 36); /* Color de fondo amarillo para el menú */
+}
+
+/* Contenedor de varias imágenes */
+.imagenes {
+  display: flex;                     /* Convierte el contenedor en flexbox para poner imágenes en fila */
+  gap: 100px;                        /* Espacio de 100px entre cada imagen */
+  flex-wrap: wrap;                    /* Permite que las imágenes pasen a la siguiente fila si no caben */
+  justify-content: center;           /* Centra las imágenes horizontalmente dentro del contenedor */
+}
+
+/* Estilo de cada imagen dentro del contenedor .imagenes */
+.imagenes img {
+  width: min(80vw, 300px);           /* Ancho de la imagen: máximo 300px o 80% del ancho de la ventana (responsive) */
+  height: min(55vw, 200px);          /* Alto de la imagen: máximo 200px o 55% del ancho de la ventana (responsive) */
+  border-radius: 50%;                /* Hace que la imagen sea circular */
+  object-fit: cover;                 /* Recorta la imagen para cubrir el contenedor sin deformarla */
+}
